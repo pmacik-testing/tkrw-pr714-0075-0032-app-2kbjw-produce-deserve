@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ps2p
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0032-tenant/tkrw-pr714-0075-0032-app/devfile-sample-ps2p@sha256:06679ebe5bc724df6af661d2d7d6bb1aa6c5df781c4e26537871851b0542da5d
+        name: my-nodejs
+        resources: {}
+status: {}
